@@ -20,6 +20,7 @@ requirements:
     - setuptools-scm
     - pytest-runner
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - wagtail >=4.1
