@@ -1,5 +1,5 @@
 {% set name = "wagtail-color-panel" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2349daa24ad9ef78685be493bc4f30a325383a1fcea01506232ba35048849f6d
+  sha256: 73ca057e24b755175a52197d756b4a6dd0be19a0dd3d2779707235c54c669b78
 
 build:
   noarch: python
@@ -22,9 +22,10 @@ requirements:
     - pip
     - setuptools
   run:
+    - python-dotenv
     - django
     - python >={{ python_min }}
-    - wagtail >=5.2
+    - wagtail >=6.3
 
 test:
   imports:
