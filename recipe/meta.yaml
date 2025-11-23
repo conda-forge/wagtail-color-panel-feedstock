@@ -1,5 +1,5 @@
 {% set name = "wagtail-color-panel" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 73ca057e24b755175a52197d756b4a6dd0be19a0dd3d2779707235c54c669b78
+  sha256: efc42058a49c39bea6a61523b230c71cf31e5aeaa269281c53146eeec02fc509
 
 build:
   noarch: python
